@@ -1,0 +1,84 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: 'Segoe UI', sans-serif;
+  background-color: #7443c48f;
+  color: white;
+  overflow-x: hidden;
+}
+
+.slider {
+  padding: 40px;
+  text-align: center;
+  background: linear-gradient(to top, #000000d0, #000000a0), url('background.jpg') no-repeat center/cover;
+  min-height: 100vh;
+}
+
+.heading {
+  font-size: 60px;
+  font-weight: bold;
+  margin-bottom: 20px;
+  color: #fff;
+}
+
+.description {
+  font-size: 18px;
+  margin-bottom: 30px;
+  max-width: 600px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.slider-container {
+  position: relative;
+  max-width: 90%;
+  margin: auto;
+  overflow: hidden;
+}
+
+.slides {
+  display: flex;
+  transition: transform 0.6s ease;
+}
+
+.slide {
+  min-width: 100%;
+  transition: opacity 0.5s ease;
+}
+
+.slide img {
+  width: 100%;
+  border-radius: 12px;
+  box-shadow: 0 0 15px rgba(255, 255, 255, 0.2);
+}
+
+.nav {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  background: rgba(255, 255, 255, 0.2);
+  border: none;
+  font-size: 2rem;
+  padding: 10px 20px;
+  cursor: pointer;
+  color: white;
+  z-index: 1;
+  border-radius: 8px;
+  transition: background 0.3s;
+}
+
+.nav:hover {
+  background: rgba(255, 255, 255, 0.4);
+}
+
+.prev {
+  left: 10px;
+}
+
+.next {
+  right: 10px;
+}
